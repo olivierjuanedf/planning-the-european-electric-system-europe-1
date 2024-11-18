@@ -3,9 +3,9 @@
 First very simple toy Unit Commitment model of Poland zone - alone -> with PyPSA and ERAA data
 -> 
 (i) copy/paste/rename this file according to your country name DONE
-(ii) copy/paste pieces of code from my_toy_ex_italy.py to this created file
+(ii) copy/paste pieces of code from my_toy_ex_poland.py to this created file
 (iii) Also, set the parameters of your country electricity generators in file {Poland}_parameters.py,
-following/adapting model of long_term_uc/toy_model_params/italy_parameters.py
+following/adapting model of long_term_uc/toy_model_params/poland_parameters.py
 """
 import warnings
 #deactivate some annoying and useless warnings in pypsa/pandas
@@ -69,7 +69,7 @@ uc_period_end = uc_period_start + timedelta(days=14)
 selected_countries = [country]  # [Multiple-countries ext.] List with multiple country names
 uc_run_params = UCRunParams(selected_countries=selected_countries, selected_target_year=year, 
                             selected_climatic_year=climatic_year, 
-                            selected_prod_types={"italy": agg_prod_types_selec},
+                            selected_prod_types={"poland": agg_prod_types_selec},
                             uc_period_start=uc_period_start,
                             uc_period_end=uc_period_end)
 
@@ -111,16 +111,16 @@ network = pypsa.Network(snapshots=demand[country].index)
 print(network)
 
 #################################################
-# KEY POINT: main parameters needed for Italy description in PyPSA are set in script
-# long_term_uc.toy_model_params.italy_parameters.py
+# KEY POINT: main parameters needed for Poland description in PyPSA are set in script
+# long_term_uc.toy_model_params.poland_parameters.py
 # To get the meaning and format of main PyPSA objects/attributes look 
 # at file doc/toy-model_tutorial.md
 #################################################
 
 # IV.2) Add bus for considered country
-# N.B. Italy coordinates set randomly! (not useful in the calculation that will be done this week)
-from long_term_uc.toy_model_params.italy_parameters import gps_coords
-coordinates = {"italy": gps_coords}
+# N.B. Poland coordinates set randomly! (not useful in the calculation that will be done this week)
+from long_term_uc.toy_model_params.poland_parameters import gps_coords
+coordinates = {"poland": gps_coords}
 # IV.2.1) For brevity, set country trigram as the "id" of this zone in following model definition (and observed outputs)
 from long_term_uc.include.dataset_builder import set_country_trigram
 country_trigram = set_country_trigram(country=country)
@@ -132,7 +132,7 @@ network.add("Bus", name=country_trigram, x=coordinates[country][0], y=coordinate
 # [Multiple-count. ext., end]
 
 # IV.4) [VERY KEY STAGE] Generators definition, beginning with only simple parameters. 
-# Almost "real Italy"... excepting hydraulic storage and Demand-Side Response capacity 
+# Almost "real Poland"... excepting hydraulic storage and Demand-Side Response capacity 
 # (we will come back on this later)
 # Thanks to Tim WALTER - student of last year ATHENS course, detailed parameter values associated 
 # to different fuel sources are available in following dictionary. You can use it or search/define 
@@ -140,9 +140,9 @@ network.add("Bus", name=country_trigram, x=coordinates[country][0], y=coordinate
 # (keeping format of dataclass - sort of enriched dictionary -, just change values in 
 # file long_term_uc/common/fuel_sources.py)
 from long_term_uc.common.fuel_sources import FUEL_SOURCES
-from long_term_uc.toy_model_params.italy_parameters import get_generators
+from long_term_uc.toy_model_params.poland_parameters import get_generators
 # IV.4.1) get generators to be set on the unique considered bus here 
-# -> from long_term_uc.toy_model_params.italy_parameters.py script
+# -> from long_term_uc.toy_model_params.poland_parameters.py script
 generators = get_generators(country_trigram=country_trigram, fuel_sources=FUEL_SOURCES, 
                             wind_on_shore_data=wind_on_shore[country], wind_off_shore_data=wind_off_shore[country],
                             solar_pv_data=solar_pv[country])
@@ -211,14 +211,14 @@ network.generators.p_nom_opt.drop(f"Failure_{country_trigram}").div(1e3).plot.ba
 plt.tight_layout()
 
 # IV.8.2) And "stack" of optimized production profiles -> key graph to interpret UC solution -> will be 
-# saved in file output/long_term_uc/figures/prod_italy_{year}_{period start, under format %Y-%m-%d}.png
+# saved in file output/long_term_uc/figures/prod_poland_{year}_{period start, under format %Y-%m-%d}.png
 network.generators_t.p.div(1e3).plot.area(subplots=False, ylabel="GW")
 from long_term_uc.common.long_term_uc_io import get_prod_figure, get_price_figure
 plt.tight_layout()
 plt.savefig(get_prod_figure(country=country, year=year, start_horizon=uc_run_params.uc_period_start))
 
 # IV.8.3) Finally, "marginal prices" -> QUESTION: meaning? 
-# -> saved in file output/long_term_uc/figures/prices_italy_{year}_{period start, under format %Y-%m-%d}.png
+# -> saved in file output/long_term_uc/figures/prices_poland_{year}_{period start, under format %Y-%m-%d}.png
 # QUESTION: how can you interpret the very constant value plotted?
 network.buses_t.marginal_price.mean(1).plot.area(figsize=(8, 3), ylabel="Euro per MWh")
 plt.tight_layout()
