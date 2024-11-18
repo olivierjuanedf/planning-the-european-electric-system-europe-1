@@ -76,7 +76,7 @@ III) Get needed data - from ERAA csv files in data\\ERAA_2023-2
 """
 from long_term_uc.utils.eraa_data_reader import get_countries_data
 
-# III.1) Get data for BeNeLux... just for test -> data used when writing PyPSA model will be re-obtained afterwards
+# III.1) Get data for Italy... just for test -> data used when writing PyPSA model will be re-obtained afterwards
 demand, agg_cf_data, agg_gen_capa_data, interco_capas = \
     get_countries_data(uc_run_params=uc_run_params, agg_prod_types_with_cf_data=agg_prod_types_selec,
                        aggreg_prod_types_def=AGG_PROD_TYPES_DEF)
@@ -97,7 +97,7 @@ wind_off_shore = {
 }
 
 """
-IV) Build PyPSA model - with unique country (Benelux here)
+IV) Build PyPSA model - with unique country (Italy here)
 """
 # IV.1) Initialize PyPSA Network (basis of all your simulations this week!). 
 import pypsa
@@ -109,7 +109,7 @@ network = pypsa.Network(snapshots=demand[country].index)
 print(network)
 
 #################################################
-# KEY POINT: main parameters needed for benelux description in PyPSA are set in script
+# KEY POINT: main parameters needed for Italy description in PyPSA are set in script
 # long_term_uc.toy_model_params.italy_parameters.py
 # To get the meaning and format of main PyPSA objects/attributes look 
 # at file doc/toy-model_tutorial.md
