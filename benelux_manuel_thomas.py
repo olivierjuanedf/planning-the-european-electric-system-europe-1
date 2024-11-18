@@ -221,3 +221,4 @@ plt.savefig(get_prod_figure(country=country, year=year, start_horizon=uc_run_par
 network.buses_t.marginal_price.mean(1).plot.area(figsize=(8, 3), ylabel="Euro per MWh")
 plt.tight_layout()
 plt.savefig(get_price_figure(country=country, year=year, start_horizon=uc_run_params.uc_period_start))
+#end
