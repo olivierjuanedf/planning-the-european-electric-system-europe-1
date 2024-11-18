@@ -15,7 +15,7 @@ def get_generators(country_trigram: str, fuel_sources: Dict[str, FuelSources],
     """
     # List to be completed
     generators = [        
-        {"name": f"Hard-Coal_{country_trigram}", "carrier": "Coal", "p_nom": 2362,
+        {"name": f"Hard-Coal_{country_trigram}", "carrier": "Coal", "p_nom": 13181.55,
         "p_min_pu": 0, "p_max_pu": 1,
         "marginal_cost": fuel_sources["Coal"].primary_cost * 0.37,
         "efficiency": 0.37, "committable": False},
