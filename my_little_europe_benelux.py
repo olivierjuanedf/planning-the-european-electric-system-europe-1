@@ -117,7 +117,7 @@ print(network)
 
 # IV.2) Add bus for considered country
 # N.B. Benelux coordinates set randomly! (not useful in the calculation that will be done this week)
-from long_term_uc.toy_model_params.benelux_parameters.py import gps_coords
+from long_term_uc.toy_model_params.benelux_parameters import gps_coords
 coordinates = {"benelux": gps_coords}
 # IV.2.1) For brevity, set country trigram as the "id" of this zone in following model definition (and observed outputs)
 from long_term_uc.include.dataset_builder import set_country_trigram
