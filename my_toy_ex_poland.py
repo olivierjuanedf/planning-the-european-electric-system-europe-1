@@ -5,7 +5,7 @@ First very simple toy Unit Commitment model of Poland zone - alone -> with PyPSA
 (i) copy/paste/rename this file according to your country name DONE
 (ii) copy/paste pieces of code from my_toy_ex_poland.py to this created file
 (iii) Also, set the parameters of your country electricity generators in file {Poland}_parameters.py,
-following/adapting model of long_term_uc/toy_model_params/poland_parameters.py
+following/adapting model of long_term_uc/toy_model_params/italy_parameters.py
 """
 import warnings
 #deactivate some annoying and useless warnings in pypsa/pandas
