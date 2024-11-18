@@ -3,7 +3,7 @@ from typing import Dict, List
 from long_term_uc.common.fuel_sources import FuelSources
 
 
-gps_coords = (0, 0)  # Your choice!
+gps_coords = (13.4137, 52.5181)
 
 
 def get_generators(country_trigram: str, fuel_sources: Dict[str, FuelSources],
