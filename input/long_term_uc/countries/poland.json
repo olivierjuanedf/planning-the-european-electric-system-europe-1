@@ -1,14 +1,31 @@
 {
   "team": "poland",
   "selected_prod_types": {
+    "germany": [
+      "all"
+    ],
     "poland": [
+      "all"
+    ],
+    "scandinavia": [
       "all"
     ]
   },
   "updated_capacities_prod_types": {
+    "germany": {
+      "failure": 10000000.0,
+      "coal": 1000000,
+      "wind_offshore": 1000000
+    },
     "poland": {
-      "failure": 100000.0,
-      "coal": 1000000
+      "failure": 10000000.0,
+      "coal": 1000000,
+      "biofuel": 100000
+    },
+    "scandinavia": {
+      "failure": 10000000.0,
+      "coal": 50000,
+      "wind_onshore": 1000000
     }
   }
 }
