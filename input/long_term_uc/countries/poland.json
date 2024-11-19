@@ -13,6 +13,17 @@
   },
   "updated_capacities_prod_types": {
     "poland": {
+<<<<<<< HEAD
+=======
+      "failure": 10000000.0,
+      "coal": 100000000,
+      "biofuel": 100000000
+    },
+    "scandinavia": {
+      "failure": 10000000.0,
+      "coal": 50000,
+      "wind_onshore": 100000
+>>>>>>> ef7675e (hello)
     }
   }
 }
