@@ -7,8 +7,23 @@
   },
   "updated_capacities_prod_types": {
     "iberian-peninsula": {
-      "failure": 10000000.0,
-      "nuclear": 10000000.0
+        "wind_offshore":  88,
+        "gas":            28327.56,
+        "others_fatal":   7051.89,
+        "dsr":            500,
+        "batteries":      0,
+        "coal":           561.8,
+        "wind_onshore":   41216.73,
+        "nuclear":        7117.36,
+        "failure":        1000000,
+        "solar_pv":       42541.58
     }
   }
 }
+
+
+
+
+
+
+
