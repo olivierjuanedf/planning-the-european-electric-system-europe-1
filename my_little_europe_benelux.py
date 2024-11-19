@@ -152,7 +152,7 @@ generators = get_generators(country_trigram=country_trigram, fuel_sources=FUEL_S
 # IV.4.2) Loop over previous list of dictionaries to add each of the generators to PyPSA network
 # [Coding trick] ** used to "unpack" the dictionary as named parameters
 for generator in generators:
-    network.add("Generator", bus=country_trigram, **generator, )
+    network.add("Generator", bus=country_trigram, **generator)
 # [Multiple-count. ext., start] Idem but adding the different generators to the bus (country) they are connected to
 # -> a correspondence (for ex. with a dictionary) between bus names and list of associated 
 # generators is then needed
