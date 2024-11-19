@@ -235,3 +235,4 @@ network.buses_t.marginal_price.mean(1).plot.line(figsize=(8, 3), ylabel="Euro pe
 plt.tight_layout()
 plt.savefig(get_price_figure(country=country, year=year, start_horizon=uc_run_params.uc_period_start))
 
+#rien
