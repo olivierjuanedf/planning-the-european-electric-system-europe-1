@@ -47,7 +47,7 @@ year = 2025
 
 #Climate year is a variable we can change to test multiple weather conditions
 #TODO
-climatic_year = 2003
+climatic_year = 1989
 
 # ToDo: used?
 agg_prod_types_selec = ["wind_onshore", "wind_offshore", "solar_pv"]
