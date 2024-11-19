@@ -7,7 +7,8 @@
   },
   "updated_capacities_prod_types": {
     "iberian-peninsula": {
-      "failure": 10000000.0
+      "failure": 10000000.0,
+      "nuclear": 10000000.0
     }
   }
 }
