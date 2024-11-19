@@ -95,6 +95,10 @@ wind_off_shore = {
     country: selec_in_df_based_on_list(df=agg_cf_data[country], selec_col="production_type_agg",
                                        selec_vals=["wind_offshore"], rm_selec_col=True)
 }
+nuclear = {
+    country: selec_in_df_based_on_list(df=agg_cf_data[country], selec_col="production_type_agg",
+                                       selec_vals=["nuclear"], rm_selec_col=True)
+}
 
 """
 IV) Build PyPSA model - with unique country (Benelux here)
