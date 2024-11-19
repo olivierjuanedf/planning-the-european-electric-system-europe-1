@@ -1,7 +1,3 @@
-"Here the production and the capacity for all countries is defined
-You can only invest in an already existing production type.
-Look at the available-values.json file"
-
 {
   "team": "poland",
   "selected_prod_types": {
