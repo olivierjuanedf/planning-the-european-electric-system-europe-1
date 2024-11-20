@@ -1,0 +1,13 @@
+{
+  "team": "benelux",
+  "selected_prod_types": {
+  "benelux": ["all"]
+},
+  "updated_capacities_prod_types": {
+    "benelux": {
+    "nuclear": 10000.0,
+    "wind_offshore": 12000.0,
+    "gas": 12000.0
+    }
+  }
+}
