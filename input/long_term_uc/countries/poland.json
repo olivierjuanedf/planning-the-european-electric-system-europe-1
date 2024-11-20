@@ -7,25 +7,27 @@
     "poland": [
       "all"
     ],
-    "scandinavia": [
+    "france": [
+      "all"
+    ],
+    "iberian-peninsula": [
+      "all"
+    ],
+    "italy": [
+      "all"
+    ],
+    "benelux": [
       "all"
     ]
   },
   "updated_capacities_prod_types": {
-    "germany": {
-      "failure": 10000000.0,
-      "coal": 1000000,
-      "wind_offshore": 1000000
-    },
     "poland": {
-      "failure": 10000000.0,
-      "coal": 1000000,
-      "biofuel": 100000
+      "coal": 10000000,
+      "failure": 1000000
     },
-    "scandinavia": {
-      "failure": 10000000.0,
-      "coal": 50000,
-      "wind_onshore": 1000000
+    "France": {
+      "coal": 10000000,
+      "failure": 1000000
     }
   }
 }
