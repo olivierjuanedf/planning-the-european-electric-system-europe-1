@@ -16,14 +16,13 @@
   "updated_capacities_prod_types": {
     "germany": {
       "failure":1e5,
-      "wind_offshore":100000.00,
+      "wind_offshore":100000,
       "gas":21500,
       "others_fatal":0,
       "dsr":0,
-      "batteries":0,
       "coal":20000,
       "oil":0,
-      "wind_onshore":100000.00
+      "wind_onshore":100000
     }
   }
 }

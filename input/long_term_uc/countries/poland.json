@@ -18,16 +18,22 @@
     ],
     "benelux": [
       "all"
+    ],
+    "scandinavia": [
+      "all"
     ]
   },
   "updated_capacities_prod_types": {
     "poland": {
-      "coal": 10000000,
-      "failure": 1000000
+      "gas": 8000,
+      "others_fatal": 8000,
+      "coal": 21000,
+      "wind_onshore": 5000,
+      "biofuel": 700,
+      "solar_pv": 5000
     },
-    "France": {
-      "coal": 10000000,
-      "failure": 1000000
+    "scandinavia": {
+      "batteries": 50000
     }
   }
 }

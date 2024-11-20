@@ -11,13 +11,14 @@
         "gas":            28327.56,
         "others_fatal":   7051.89,
         "dsr":            500,
-        "batteries":      0,
+        "batteries":      1000,
         "coal":           561.8,
         "wind_onshore":   41216.73,
         "nuclear":        7117.36,
         "failure":        1000000,
         "solar_pv":       42541.58
-    }
+    },
+    "scandinavia" : {"gas": 10000 }
   }
 }
 
