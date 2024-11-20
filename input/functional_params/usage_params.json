@@ -4,5 +4,9 @@
     "allow_manually_adding_demand": "false",
     "allow_manually_adding_generators": "false",
     "mode": "solo",
+<<<<<<< HEAD
     "team": "STOP COMMITING THIS"
+=======
+    "team": "germany"
+>>>>>>> 39ae983 (midday 3)
 }
