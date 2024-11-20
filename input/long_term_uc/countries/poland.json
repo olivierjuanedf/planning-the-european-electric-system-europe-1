@@ -1,19 +1,33 @@
-"Here the production and the capacity for all countries is defined
-You can only invest in an already existing production type.
-Look at the available-values.json file"
-
 {
   "team": "poland",
   "selected_prod_types": {
+    "germany": [
+      "all"
+    ],
     "poland": [
-      "nuclear",
-      "failure"
+      "all"
+    ],
+    "france": [
+      "all"
+    ],
+    "iberian-peninsula": [
+      "all"
+    ],
+    "italy": [
+      "all"
+    ],
+    "benelux": [
+      "all"
     ]
   },
   "updated_capacities_prod_types": {
-    "germany": {
-      "nuclear": 10000.0,
-      "failure": 100.0
+    "poland": {
+      "coal": 10000000,
+      "failure": 1000000
+    },
+    "France": {
+      "coal": 10000000,
+      "failure": 1000000
     }
   }
 }

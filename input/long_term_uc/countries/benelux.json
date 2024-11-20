@@ -1,0 +1,10 @@
+{
+  "team": "benelux",
+  "selected_prod_types": {
+  "benelux": ["all"]
+},
+  "updated_capacities_prod_types": {
+    "benelux": {
+    }
+  }
+}
