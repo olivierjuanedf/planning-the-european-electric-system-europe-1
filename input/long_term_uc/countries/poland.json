@@ -7,21 +7,27 @@
     "poland": [
       "all"
     ],
-    "italy": [
+    "france": [
       "all"
     ],
     "iberian-peninsula": [
       "all"
     ],
-    "benelux": [
+    "italy": [
       "all"
     ],
-    "france": [
+    "benelux": [
       "all"
     ]
   },
   "updated_capacities_prod_types": {
     "poland": {
+      "coal": 10000000,
+      "failure": 1000000
+    },
+    "France": {
+      "coal": 10000000,
+      "failure": 1000000
     }
   }
 }
