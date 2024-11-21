@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Define the year as a variable
-country = "scandinavia"
+country = "germany"
 target_year = 2025
 climatic_year1 = 1987
 climatic_year2 = 2003
@@ -11,8 +11,8 @@ climatic_year2 = 2003
 os.makedirs('out', exist_ok=True)
 
 # Read the data from the CSV files, using ';' as the separator
-data1 = pd.read_csv(f'../data/ERAA_2023-2/demand/cy_stress-test/demand_{target_year}_{country}.csv', sep=';')
-data2 = pd.read_csv(f'../data/ERAA_2023-2/demand/demand_{target_year}_{country}.csv', sep=';')
+data1 = pd.read_csv('/workspaces/planning-the-european-electric-system-europe-1/data/ERAA_2023-2/demand/cy_stress-test/demand_2025_germany.csv', sep=';')
+data2 = pd.read_csv('/workspaces/planning-the-european-electric-system-europe-1/data/ERAA_2023-2/demand/demand_2025_germany.csv', sep=';')
 
 # Convert 'date' column to datetime format
 data1['date'] = pd.to_datetime(data1['date'])
