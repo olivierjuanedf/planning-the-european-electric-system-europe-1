@@ -28,7 +28,10 @@
       "others_fatal": 0,
       "wind_onshore": 10000,
       "biofuel": 10000,
-      "solar_pv": 10000
+      "solar_pv": 10000,
+      "coal": 0,
+      "gas": 0,
+      "hydro_reservoir": 0
     },
     "germany": {
     },
