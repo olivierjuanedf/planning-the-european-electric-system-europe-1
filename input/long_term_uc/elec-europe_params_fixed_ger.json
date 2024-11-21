@@ -140,7 +140,6 @@
     "batteries": {
       "carrier": "flexibility",
       "p_min_pu": -1,
-      "marginal_cost": 40,
       "p_max_pu": 1
     },
     "biofuel": {
@@ -155,8 +154,8 @@
       "carrier": "coal",
       "p_min_pu": 0,
       "p_max_pu": 1,
-      "marginal_cost": 30,
-      "committable": "false"
+      "committable": "false",
+      "marginal_cost": 30
     },
     "dsr": {
       "carrier": "dsr",

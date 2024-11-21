@@ -16,13 +16,16 @@
   "updated_capacities_prod_types": {
     "germany": {
       "failure":1e5,
-      "wind_offshore":0,
-      "gas":0,
+      "wind_offshore":100000,
+      "gas":21500,
       "others_fatal":0,
       "dsr":0,
-      "coal":0,
+      "coal":20000,
       "oil":0,
-      "wind_onshore":0
+      "wind_onshore":100000
+    },
+    "scandinavia": {
+      "hydro_reservoir":44482
     }
   }
 }
