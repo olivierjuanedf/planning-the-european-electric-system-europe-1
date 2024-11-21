@@ -25,15 +25,24 @@
   },
   "updated_capacities_prod_types": {
     "poland": {
-      "gas": 8000,
+      "gas": 5000,
       "others_fatal": 8000,
-      "coal": 21000,
-      "wind_onshore": 5000,
-      "biofuel": 700,
-      "solar_pv": 5000
+      "coal": 5000,
+      "wind_onshore": 10000,
+      "biofuel": 0,
+      "solar_pv": 10000
+    },
+    "germany": {
+    },
+    "iberian-peninsula": {
+    },
+    "france": {
     },
     "scandinavia": {
-      "batteries": 50000
+    },
+    "italy": {
+    },
+    "benelux": {
     }
   }
 }
