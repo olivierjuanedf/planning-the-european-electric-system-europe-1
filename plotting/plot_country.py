@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 os.makedirs('out/country', exist_ok=True)
 
 # Read the CSV file into a pandas DataFrame
-df = pd.read_csv('../output/long_term_uc/data/opt_power_europe_2025_cy2003_1900-01-01.csv')
+df = pd.read_csv('/workspaces/planning-the-european-electric-system-europe-1/output/long_term_uc/data/opt_power_europe_2025_cy1989_1900-01-01.csv')
 
 # Convert the 'snapshot' column to datetime
 df['snapshot'] = pd.to_datetime(df['snapshot'])
@@ -45,7 +45,7 @@ for country_code in country_codes:
     plt.tight_layout()
     
     # Save the plot to 'out/{country_code}.png'
-    plt.savefig(f'out/country/{country_code}.png')
+    plt.savefig(f'/workspaces/planning-the-european-electric-system-europe-1/plotting/out/{country_code}.png')
     
     # Close the plot to free up memory
     plt.close()
