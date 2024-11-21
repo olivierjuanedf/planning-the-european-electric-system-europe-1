@@ -27,7 +27,7 @@
     "poland": {
       "others_fatal": 8000,
       "wind_onshore": 10000,
-      "biofuel": 100000,
+      "biofuel": 10000,
       "solar_pv": 10000
     },
     "germany": {
