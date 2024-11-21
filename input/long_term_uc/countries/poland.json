@@ -25,11 +25,9 @@
   },
   "updated_capacities_prod_types": {
     "poland": {
-      "gas": 5000,
       "others_fatal": 8000,
-      "coal": 5000,
       "wind_onshore": 10000,
-      "biofuel": 0,
+      "biofuel": 100000,
       "solar_pv": 10000
     },
     "germany": {
