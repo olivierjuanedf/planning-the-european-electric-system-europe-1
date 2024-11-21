@@ -10,6 +10,7 @@
       "batteries",
       "coal",
       "oil",
+      "solar_pv",
       "wind_onshore"
     ]
   },
@@ -22,6 +23,7 @@
       "dsr":0,
       "coal":20000,
       "oil":0,
+      "solar_pv" : 10000,
       "wind_onshore":100000
     },
     "scandinavia": {
