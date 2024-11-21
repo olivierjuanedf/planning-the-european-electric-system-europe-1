@@ -5,9 +5,17 @@
 },
   "updated_capacities_prod_types": {
     "benelux": {
-    "wind_offshore": 4000.0,
-    "solar_pv": 10000.0,
-    "hydro_reservoir": 15000
+    "wind_onshore": 12000.0,
+    "solar_pv": 50000.0,
+    "hydro_reservoir": 1000.0,
+    "oil": 0.0,
+    "gas": 1000.0,
+    "wind_offshore": 16000.0, 
+    "nuclear": 15000.0,
+    "hard_coal": 0.0,
+    "biofuel": 2088.16,
+    "demand_side_response_capacity": 2800.0,
+    "batteries": 2591
     }
   }
 }
