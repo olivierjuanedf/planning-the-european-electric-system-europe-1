@@ -5,6 +5,8 @@
 },
   "updated_capacities_prod_types": {
     "benelux": {
+    "wind_offshore": 4000.0,
+    "solar_pv": 10000.0
     }
   }
 }
