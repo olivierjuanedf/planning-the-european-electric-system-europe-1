@@ -140,11 +140,7 @@
     "batteries": {
       "carrier": "flexibility",
       "p_min_pu": -1,
-<<<<<<< HEAD
       "marginal_cost": 40,
-=======
-      "marginal_cost": 0,
->>>>>>> 87369a2 (endday3)
       "p_max_pu": 1
     },
     "biofuel": {
@@ -159,11 +155,7 @@
       "carrier": "coal",
       "p_min_pu": 0,
       "p_max_pu": 1,
-<<<<<<< HEAD
       "marginal_cost": 30,
-=======
-      "marginal_cost": 20,
->>>>>>> 87369a2 (endday3)
       "committable": "false"
     },
     "dsr": {
@@ -179,11 +171,7 @@
       "p_min_pu": 0,
       "p_max_pu": 1,
       "efficiency": 1,
-<<<<<<< HEAD
-      "marginal_cost": 250,
-=======
       "marginal_cost": 1e10,
->>>>>>> 87369a2 (endday3)
       "committable": "false"
     },
     "gas": {
@@ -191,11 +179,7 @@
       "p_min_pu": 0,
       "p_max_pu": 1,
       "efficiency": 0.5,
-<<<<<<< HEAD
       "marginal_cost": 49,
-=======
-      "marginal_cost": 45,
->>>>>>> 87369a2 (endday3)
       "committable": "true"
     },
     "hydro_pondage": {
@@ -233,11 +217,7 @@
       "p_min_pu": 1,
       "p_max_pu": 1,
       "efficiency": 1,
-<<<<<<< HEAD
-      "marginal_cost": 0,
-=======
       "marginal_cost": 0.1,
->>>>>>> 87369a2 (endday3)
       "committable": "false"
     },
     "nuclear": {

@@ -23,6 +23,9 @@
       "coal":20000,
       "oil":0,
       "wind_onshore":100000
+    },
+    "scandinavia": {
+      "hydro_reservoir":44482
     }
   }
 }
