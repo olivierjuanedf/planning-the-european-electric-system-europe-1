@@ -3,16 +3,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Define the year as a variable
-country = "germany"
+country = "poland"
 target_year = 2025
-climatic_year = 1987
+climatic_year = 2003
 window_size = 24 * 7  # Sliding average window size in hours (adjust as needed)
 
 os.makedirs('out', exist_ok=True)
 
 # Read the data from the CSV file, using ';' as the separator
 # data = pd.read_csv(f'data/ERAA_2023-2/demand/demand_{target_year}_{country}.csv', sep=';')
-data = pd.read_csv('/workspaces/planning-the-european-electric-system-europe-1/data/ERAA_2023-2/demand/cy_stress-test/demand_2025_germany.csv', sep=';')
+data = pd.read_csv(f'/workspaces/planning-the-european-electric-system-europe-1/data/ERAA_2023-2/demand/demand_2025_{country}.csv', sep=';')
 
 # Convert 'date' column to datetime format
 data['date'] = pd.to_datetime(data['date'])
@@ -37,7 +37,7 @@ else:
     # Add labels and title
     plt.xlabel(f'Date ({climatic_year})')
     plt.ylabel('Value')
-    plt.ylim(30000, 100000)
+    # plt.ylim(30000, 100000)
     plt.title(f'Values for {climatic_year} with Sliding Average')
     plt.grid(True)
 

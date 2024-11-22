@@ -25,25 +25,17 @@
   },
   "updated_capacities_prod_types": {
     "poland": {
-      "others_fatal": 0,
-      "wind_onshore": 10000,
+      "others_fatel": 8000,
+      "wind_onshore": 15000,
       "biofuel": 10000,
-      "solar_pv": 10000,
+      "solar_pv": 16049,
       "coal": 0,
       "gas": 0,
-      "hydro_reservoir": 0
-    },
-    "germany": {
-    },
-    "iberian-peninsula": {
-    },
-    "france": {
-    },
-    "scandinavia": {
-    },
-    "italy": {
-    },
-    "benelux": {
+      "hydro_pondage": 10000,
+      "hydro_pump_storage_closed_loop": 0,
+      "hydro_pump_storage_open_loop": 0,
+      "hydro_reservoir": 0,
+      "hydro_run_of_river": 0
     }
   }
 }
