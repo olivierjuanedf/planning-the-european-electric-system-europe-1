@@ -18,10 +18,10 @@
     "germany": {
       "failure":1e5,
       "wind_offshore":15000,
-      "gas":25000,
+      "gas":20000,
       "others_fatal":0,
       "dsr":1000,
-      "coal":20000,
+      "coal":15000,
       "oil":0,
       "solar_pv" : 100000,
       "wind_onshore":100000,
