@@ -18,7 +18,7 @@
     "germany": {
       "failure":1e5,
       "wind_offshore":15000,
-      "gas":30000,
+      "gas":25000,
       "others_fatal":0,
       "dsr":1000,
       "coal":20000,
