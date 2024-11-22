@@ -46,7 +46,7 @@ if not data_target_year1.empty and not data_target_year2.empty:
     plt.xlabel('Exceedance Probability (%)')
     plt.ylabel('Demand Value')
     plt.title(f'Load Duration Curves for {climatic_year1} and {climatic_year2}')
-    plt.ylim(30000, 90000)
+    plt.ylim(10000, 50000)
     plt.grid(True)
     plt.legend()
     plt.tight_layout()
