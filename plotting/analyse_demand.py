@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # Define the year as a variable
 country = "poland"
 target_year = 2025
-climatic_year = 1987
+climatic_year = 2003
 window_size = 24 * 7  # Sliding average window size in hours (adjust as needed)
 
 os.makedirs('out', exist_ok=True)
