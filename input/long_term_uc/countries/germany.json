@@ -2,14 +2,30 @@
   "team": "germany",
   "selected_prod_types": {
     "germany": [
-      "nuclear",
-      "failure"
+      "failure",
+      "wind_offshore",
+      "gas",
+      "others_fatal",
+      "dsr",
+      "batteries",
+      "coal",
+      "oil",
+      "solar_pv",
+      "wind_onshore"
     ]
   },
   "updated_capacities_prod_types": {
     "germany": {
-      "nuclear": 10000.0,
-      "failure": 100.0
+      "failure":1e5,
+      "wind_offshore":15000,
+      "gas":30000,
+      "others_fatal":0,
+      "dsr":1000,
+      "coal":15000,
+      "oil":0,
+      "solar_pv" : 100000,
+      "wind_onshore":100000,
+      "batteries":2000
     }
   }
 }

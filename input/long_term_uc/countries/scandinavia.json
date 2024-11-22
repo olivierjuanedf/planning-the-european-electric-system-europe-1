@@ -1,0 +1,25 @@
+{
+	"team": "scandinavia",
+	"selected_prod_types": {
+	  "scandinavia": [
+      "all"
+	  ]
+	},
+	"updated_capacities_prod_types": {
+	  "scandinavia": {
+		  "wind_offshore": 2447.30,
+      "gas": 3324.86,
+      "others_fatal": 0,
+      "dsr": 0,
+      "batteries": 200,
+      "coal": 866.6,
+      "oil": 1580.0,
+      "wind_onshore": 39318.31,
+      "biofuel": 3273.41,
+      "nuclear": 11277.0,
+      "solar_pv": 12108.45,
+      "failure": 100000.0
+	  }
+	}
+}
+  
