@@ -251,7 +251,6 @@ def add_generators(network, generators_data: Dict[str, List[GenerationUnitData]]
         country_bus_name = get_country_bus_name(country=country)
         for gen_unit_data in gen_units_data:
             pypsa_gen_unit_dict = gen_unit_data.__dict__
-            print(country, pypsa_gen_unit_dict)
             if pypsa_gen_unit_dict.get('max_hours', None) is not None:
                 network.add("StorageUnit", bus=f"{country_bus_name}", **pypsa_gen_unit_dict, state_of_charge_initial= pypsa_gen_unit_dict['p_nom'] * pypsa_gen_unit_dict['max_hours'] * 0.8
 )
