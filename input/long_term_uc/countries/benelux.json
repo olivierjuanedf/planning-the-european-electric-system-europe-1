@@ -8,15 +8,15 @@
     "wind_offshore": 13000.0,
     "wind_onshore": 12000.0,
     "hydro_reservoir": 1000.0,
-    "nuclear": 12000.0,
+    "nuclear": 13000.0,
     "solar_pv": 50000.0,
-    "biofuel": 2088.16, 
+    "biofuel": 3000.0, 
     "hydro_run_of_river": 170.0,
     "demand_side_response_capacity": 3000.0,
-    "gas": 5000.0,
+    "gas": 8000.0,
     "batteries": 3500.0,
     "oil": 0.0,
-    "hard_coal": 2670.0
+    "hard_coal": 500.0
     }
   }
 }
