@@ -100,6 +100,10 @@ if result[1] == pypsa_opt_resol_status:
                                       start_horizon=uc_run_params.uc_period_start)
   network.generators_t.p.to_csv(opt_p_csv_file)
 
+  opt_p_csv_file = get_opt_power_file(country='europe_storage', year=uc_run_params.selected_target_year, climatic_year=uc_run_params.selected_climatic_year,
+                                      start_horizon=uc_run_params.uc_period_start)
+  network.storage_units_t.p.to_csv(opt_p_csv_file)
+
   # IV.10) Save marginal prices to an output file
   print("Save marginal prices decisions to .csv file")
   marginal_prices_csv_file = get_marginal_prices_file(country='europe', year=uc_run_params.selected_target_year, climatic_year=uc_run_params.selected_climatic_year,
