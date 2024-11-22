@@ -26,11 +26,11 @@
   "updated_capacities_prod_types": {
     "poland": {
       "others_fatel": 8000,
-      "wind_onshore": 20000,
+      "wind_onshore": 15000,
       "biofuel": 10000,
       "solar_pv": 16049,
-      "coal": 0,
-      "gas": 0,
+      "coal": 13181.55,
+      "gas": 3728.82,
       "hydro_pondage": 0,
       "hydro_pump_storage_closed_loop": 6300,
       "hydro_pump_storage_open_loop": 1300,
