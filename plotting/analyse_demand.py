@@ -13,6 +13,9 @@ os.makedirs('out', exist_ok=True)
 # Read the data from the CSV file, using ';' as the separator
 # data = pd.read_csv(f'data/ERAA_2023-2/demand/demand_{target_year}_{country}.csv', sep=';')
 data = pd.read_csv(f'/workspaces/planning-the-european-electric-system-europe-1/data/ERAA_2023-2/demand/demand_2025_{country}.csv', sep=';')
+#############################################
+# If the year which you want to test is not in the above path for the csv file then try the below path:
+# data = pd.read_csv(f'/workspaces/planning-the-european-electric-system-europe-1/data/ERAA_2023-2/demand/cy_stress-test/demand_2025_{country}.csv', sep=';')
 
 # Convert 'date' column to datetime format
 data['date'] = pd.to_datetime(data['date'])
